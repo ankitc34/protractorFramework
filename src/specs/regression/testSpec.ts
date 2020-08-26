@@ -1,6 +1,9 @@
 import { element, by, browser } from "protractor";
 import { angularPracticePage } from "../../page-objects/angularPracticePage";
 import {log4jsconfig} from '../../config/log4jsconfig';
+import * as prop from 
+"C:/Users/DELL/eclipse-protractor-workspace/Jasmine.Hays.com/src/resources/data/UK/en_GB/mobilesList.json";
+
 
 describe("Practice Exercise2", function() {
 
@@ -23,10 +26,11 @@ describe("Practice Exercise2", function() {
 		
 		ang.shop.click();
 
-		selectItem("Samsung Note 8");
-		selectItem("iphone X");
-		selectItem("xiomi");
-		selectItem("Blackberry");
+		
+		selectItem((<any>prop).mobileList.a);
+		selectItem((<any>prop).mobileList.b);
+		selectItem((<any>prop).mobileList.c);
+		selectItem((<any>prop).mobileList.d);
 
 		element(by.css("a[class='nav-link btn btn-primary']")).getText().then(
 				function(text) {
