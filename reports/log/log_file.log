@@ -1,0 +1,23 @@
+
+[2020-08-26T15:28:32.336] [DEBUG] default - mobile price  = 85000
+[2020-08-26T15:28:32.352] [DEBUG] default - mobile price  = 185000
+[2020-08-26T15:28:32.366] [DEBUG] default - mobile price  = 235000
+[2020-08-26T15:28:45.225] [DEBUG] default - calculation result  = 12
+[2020-08-26T15:28:45.252] [DEBUG] default - calculation result  = 4
+[2020-08-26T15:28:45.279] [DEBUG] default - calculation result  = 2
+[2020-08-26T15:28:45.316] [DEBUG] default - calculation result  = 6
+[2020-08-26T15:28:54.930] [DEBUG] default - calculation result  = 12
+[2020-08-26T15:28:54.960] [DEBUG] default - calculation result  = 4
+[2020-08-26T15:28:54.990] [DEBUG] default - calculation result  = 2
+[2020-08-26T15:28:55.015] [DEBUG] default - calculation result  = 18
+[2020-08-26T15:34:59.351] [DEBUG] default - mobile price  = 85000
+[2020-08-26T15:34:59.387] [DEBUG] default - mobile price  = 185000
+[2020-08-26T15:34:59.409] [DEBUG] default - mobile price  = 235000
+[2020-08-26T15:35:10.512] [DEBUG] default - calculation result  = 12
+[2020-08-26T15:35:10.550] [DEBUG] default - calculation result  = 4
+[2020-08-26T15:35:10.583] [DEBUG] default - calculation result  = 2
+[2020-08-26T15:35:10.627] [DEBUG] default - calculation result  = 6
+[2020-08-26T15:35:20.432] [DEBUG] default - calculation result  = 12
+[2020-08-26T15:35:20.473] [DEBUG] default - calculation result  = 4
+[2020-08-26T15:35:20.508] [DEBUG] default - calculation result  = 2
+[2020-08-26T15:35:20.553] [DEBUG] default - calculation result  = 18

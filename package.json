@@ -1,0 +1,29 @@
+{
+  "name": "jasmine.hays.com",
+  "version": "1.0.0",
+  "description": "jasmin \be type script setup",
+  "main": "index.js",
+  "dependencies": {
+    "@types/jasmine": "3.5.13",
+    "@types/jasmine-data-provider": "^2.2.1",
+    "@types/jasminewd2": "2.0.8",
+    "@types/node": "12.12.2",
+    "jasmine": "3.6.1",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor": "7.0.0",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.7",
+    "log4js": "6.3.0"
+  },
+  "scripts": {
+    "test": "protractor JSFiles/config.js",
+    "sanity": "protractor JSFiles/config.js  --suite sanity",
+    "regression": "protractor JSFiles/config.js  --suite regression",
+    "pretest": "tsc",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update"
+  },
+  "author": "Ankit",
+  "license": "ISC"
+}
