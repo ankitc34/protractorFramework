@@ -16,6 +16,10 @@ export class calculatorPage {
 
 
     getUrl() {
-        browser.get("http://juliemr.github.io/protractor-demo/");
+       browser.get("http://juliemr.github.io/protractor-demo/");
+
+       // use with sanity suite i.e.  npm run sanity
+       // browser.get(browser.params.appUrl); 
+
     }
 }

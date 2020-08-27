@@ -1,8 +1,9 @@
 import { browser, element, by } from "protractor";
 import { calculatorPage } from "../../page-objects/calculatorPage";
 import { datadrive } from "../../resources/data/UK/en_GB/data";
-import {log4jsconfig} from '../../config/log4jsconfig';
+//import {log4jsconfig} from '../../config/log4jsconfig';
 var using = require('jasmine-data-provider');
+const log = require('../../config/logging').default;
 
 
 
@@ -48,7 +49,8 @@ describe("DropDown Fn", function () {
 					Item.element(by.css("td:nth-child(3")).getText().then(
 						function (text) {
 	
-							log4jsconfig.log().debug("calculation result  = " + text);
+							//log4jsconfig.log().debug("calculation result  = " + text);
+							log.debug("calculation result  = " + text);
 						})
 	
 				})

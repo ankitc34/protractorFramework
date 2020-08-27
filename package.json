@@ -17,8 +17,8 @@
     "log4js": "6.3.0"
   },
   "scripts": {
-    "test": "protractor JSFiles/config.js",
-    "sanity": "protractor JSFiles/config.js  --suite sanity",
+    "test": "protractor JSFiles/config.js --suite regression,sanity",
+    "sanity": "protractor JSFiles/config.js  --suite sanity --params.appUrl http://juliemr.github.io/protractor-demo/",
     "regression": "protractor JSFiles/config.js  --suite regression",
     "pretest": "tsc",
     "protractor": "./node_modules/protractor/built/cli.js",

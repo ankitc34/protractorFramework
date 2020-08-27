@@ -1,6 +1,8 @@
 import { element, by, browser } from "protractor";
 import { angularPracticePage } from "../../page-objects/angularPracticePage";
-import {log4jsconfig} from '../../config/log4jsconfig';
+//import {log4jsconfig} from '../../config/log4jsconfig';
+const log = require('../../config/logging').default;
+
 import * as prop from 
 "C:/Users/DELL/eclipse-protractor-workspace/Jasmine.Hays.com/src/resources/data/UK/en_GB/mobilesList.json";
 
@@ -47,7 +49,8 @@ describe("Practice Exercise2", function() {
 				let price = Number(temp[1]);
 				total = total + price;
 		
-				log4jsconfig.log().debug("mobile price  = " + total);
+				//log4jsconfig.log().debug("mobile price  = " + total);
+				log.debug("mobile price  = " + total);
 				
 
 			})
