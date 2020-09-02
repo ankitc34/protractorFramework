@@ -10,14 +10,16 @@
     "@types/node": "12.12.2",
     "jasmine": "3.6.1",
     "jasmine-data-provider": "^2.2.0",
+    "jasmine-spec-reporter": "^5.0.2",
+    "log4js": "6.3.0",
     "protractor": "7.0.0",
     "protractor-jasmine2-html-reporter": "0.0.7",
+    "random-js": "^2.1.0",
     "ts-node": "8.10.2",
-    "typescript": "3.9.7",
-    "log4js": "6.3.0"
+    "typescript": "3.9.7"
   },
   "scripts": {
-    "test": "protractor JSFiles/config.js --suite regression,sanity",
+    "test": "protractor JSFiles/config.js",
     "sanity": "protractor JSFiles/config.js  --suite sanity --params.appUrl http://juliemr.github.io/protractor-demo/",
     "regression": "protractor JSFiles/config.js  --suite regression",
     "pretest": "tsc",

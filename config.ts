@@ -1,6 +1,8 @@
 import { Config, browser } from "protractor";
 import { protractor } from "protractor/built/ptor";
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+
 
 // An example configuration file
 export let config: Config = {
@@ -8,7 +10,7 @@ export let config: Config = {
 
   params: {
     appUrl: "https://rahulshettyacademy.com/angularpractice/",
-    
+
   },
 
   directConnect: true,
@@ -21,16 +23,37 @@ export let config: Config = {
   onPrepare: () => {
     browser.manage().window().maximize();
     browser.manage().timeouts().implicitlyWait(5000);
+    jasmine.getEnv().addReporter(new SpecReporter({
+      suite:{
+        displayNumber: true  //display each suite number (hirarical)
+      },
+      spec: {
+        displayPending: false, //display each pending spec 
+        displayDuration: true  //display each epec duration
+      },
+      summary:{
 
+        displaySuccesses: true, //display summary of success after execution
+        displayFailed: true, //display summary of failures after execution
+        displayPending: true //display summary of pendings after execution
+      }
+    }));
+
+
+    
+  },
+
+  onComplete: function () {
     jasmine.getEnv().addReporter(
       new Jasmine2HtmlReporter({
         savePath: 'reports/screenshots'
       })
     );
+   
   },
 
 
-
+  
   // Spec patterns are relative to the configuration file location passed
   // to protractor (in this example conf.js).
   // They may include glob patterns.
